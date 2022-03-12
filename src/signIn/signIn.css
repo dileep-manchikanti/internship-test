@@ -6,3 +6,11 @@ span{
     color:green;
     font-style: oblique;
 }
+
+.signIn
+{
+    display:flex;
+    flex-direction: column;
+    padding:2vw;
+    transform: translate(-50%,-50%);
+}
