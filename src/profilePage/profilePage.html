@@ -1,6 +1,6 @@
 <h1 class="text-center">User Profile Page</h1>
 <div id='noUser' ng-if='!profileCtrl.is_signed'>Not signed up yet, <a ui-sref='public.signUp'>
-    <button class="btn btn-default">Sign Up Now</button>
+    <button ui-sref='signUp' class="btn btn-default">Sign Up Now</button>
 </a></div>
 <div ng-if='profileCtrl.is_signed'>
     <fieldset>
