@@ -12,3 +12,7 @@ legend{
     font-weight: bolder;
     font-size: xx-large;
 }
+span{
+    color:red;
+    font-style: oblique;
+}
