@@ -11,8 +11,8 @@
     function signUpController(userService){
         var user=this;
         userService.user=user.user;
-        console.log(user.user.photo);
         user.submit=function(){
+            console.log(user.user.photo);
             window.alert("your Credentials are saved sucessfully");
         }
     }
