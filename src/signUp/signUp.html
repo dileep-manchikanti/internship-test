@@ -2,12 +2,7 @@
 <fieldset>
 <legend>SignUp page</legend>
 <form name="regForm" novalidate>
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <span class="input-group-text" id="inputGroup-sizing-default">First Name</span>
-        </div>
-        <input type="text" name='firstName' class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" required ng-model=signUpCtrl.user.firstName>
-      </div>
+    <input class='form-control form-control-lg' type="text" name="firstName" placeholder="Enter Your First Name" required ng-model=signUpCtrl.user.firstName minlength="3">
     <span ng-if='(regForm.firstName.$error.minlength || regForm.firstName.$error.required) && regForm.firstName.$touched'>
         firstName must be at least 3 Characters long
     </span><br>

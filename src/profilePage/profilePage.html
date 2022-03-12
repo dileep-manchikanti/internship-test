@@ -1,1 +1,17 @@
 <h1 class="text-center">User Profile Page</h1>
+<div id='noUser' ng-if='!profileCtrl.is_signed'>Not signed up yet, <a ui-sref='public.signUp'>
+    <button class="btn btn-default">Sign Up Now</button>
+</a></div>
+<div ng-if='profileCtrl.is_signed'>
+    <fieldset>
+        <legend>User Info</legend>
+        <div class="container">
+            First Name: {{profileCtrl.user.firstname}}<br>
+            Last Name: {{profileCtrl.user.lastname}}<br>
+            Email-Id: {{profileCtrl.user.email}}<br>
+            Mobile No: {{profileCtrl.user.mobile}}<br>
+            Address: {{profileCtrl.user.address}}<br>
+            <!-- <img src="items/{{profileCtrl.user.favourite.short_name}}.jpg" 
+            alt="loading"> -->
+        </div>
+    </fieldset>
