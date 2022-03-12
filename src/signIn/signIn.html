@@ -1,6 +1,5 @@
 <link rel="stylesheet" type="text/css" href="src/signIn/signIn.css">
 <h2 class="text-center">Sign In page</h2>
-<div class="Jumbutron">
     <div class="signIn">
         <span>User Email address  </span><input class="form-control-lg" type="email" ng-model="signInCtrl.user.email" placeholder="enter your email address" required>
         <span ng-if="signInCtrl.invalidEmail">Enter email address in valid email format!!</span>
@@ -8,5 +7,4 @@
         <span>Password  </span><input type="password" class='form-control-lg' ng-model="signInCtrl.user.password" required placeholder="enter your password">
         <br>
         <button class="btn btn-default" ng-click="signInCtrl.logIn()">Log In</button><a ui-sref="signUp">  Didn't Have an Account?,signUp here</a>
-    </div>
 </div>
