@@ -5,7 +5,7 @@
     signInController.$inject=['userService']
     function signInController(userService){
         var user=this;
-        if(user.user.email!=undefined && user.user.email.indexOf('@')==-1){
+        if(user.user!=undefined && user.user.email!=undefined && user.user.email.indexOf('@')==-1){
             user.invalidEmail=true;
         }
         user.logIn=function(){
