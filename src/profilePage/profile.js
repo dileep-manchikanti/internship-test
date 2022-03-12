@@ -9,5 +9,6 @@
         var profile=this;
         var service=userService;
         profile.user=service.user;
+        console.log(profile.user);
     }
 })();
