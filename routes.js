@@ -18,6 +18,12 @@
             templateUrl:"src/signIn/signIn.html",
             controller:'signInController',
             controllerAs:'signInCtrl'
-        });
+        })
+        .state('profile',{
+            url:'/profile',
+            templateUrl:'src/profilePage/profilePage.html',
+            controller:'profileController',
+            controllerAs:'profileCtrl'
+        })
     }
 })();
