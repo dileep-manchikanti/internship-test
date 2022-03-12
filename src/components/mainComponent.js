@@ -6,6 +6,7 @@
         controller:mainComponentController
     });
     function mainComponentController(){
-        
+        var main=this;
+        main.name="";
     }
 })();

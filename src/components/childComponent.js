@@ -18,7 +18,7 @@
         // else{
         //     $ctrl.Name="";
         // }
-        console.log($ctrl.name);
-        $ctrl.Name="Hi "+$ctrl.name;
+        console.log($ctrl.userName);
+        $ctrl.Name="Hi "+$ctrl.userName;
     }
 })();
