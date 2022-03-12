@@ -4,7 +4,7 @@
     .component('childComponent',{
         templateUrl:'src/components/childComponent.html',
         bindings:{
-            name:'<'
+            userName:'<'
         },
         controller:childComponentController
     });
