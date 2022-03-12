@@ -23,9 +23,9 @@
     </span><br>
     <input class="form-control-lg" type="file" id="img" name="img" accept="image/*" ng-model=signUpCtrl.user.photo>
     <br> 
-    <textarea class="form-control-lg" type="text" name="address" ng-model=signUpCtrl.user.address required placeholder="enter your Address">
+    <input class="form-control-lg" type="text" name="address" ng-model=signUpCtrl.user.address required placeholder="enter your Address">
     <br>
-    <input class='forn-control-lg' type="password" ng-model=signUpCtrl.user.password required placeholder="enter your password">
+    <input class='form-control-lg' type="password" ng-model=signUpCtrl.user.password required placeholder="enter your password">
     <br>
     <a ui-sref="signIn"><button ng-click="signUpCtrl.submit()">Sign Up</button></a>
 </form>
