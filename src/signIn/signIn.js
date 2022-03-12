@@ -16,7 +16,7 @@
         }
         user.logIn=function(){
             if(user.user.email===service.user.email && user.user.password===service.user.password){
-                service.didSigned=true;
+                service.user.didSigned=true;
                 window.alert("logged in sucessfully...");
             }
             else{
