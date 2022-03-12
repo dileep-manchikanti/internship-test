@@ -2,7 +2,7 @@
     'use strict';
     angular.module('user')
     .controller('signInController',signInController);
-    signInController.$inject=['userService']
+    signInController.$inject=['userService'];
     function signInController(userService){
         var user=this;
         var service=userService;
