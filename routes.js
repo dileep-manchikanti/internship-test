@@ -18,6 +18,6 @@
             templateUrl:"src/signIn/signIn.html",
             controller:'signInController',
             controllerAs:'signInCtrl'
-        })
+        });
     }
 })();

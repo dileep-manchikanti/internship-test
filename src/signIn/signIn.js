@@ -8,7 +8,7 @@
         user.logIn=function(){
             if(user.user.email===userService.user.email && user.user.password===userService.user.password){
                 userService.didSigned=true;
-                window.alert("logged in sucessfully...")
+                window.alert("logged in sucessfully...");
             }
         }
     }
