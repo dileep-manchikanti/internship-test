@@ -16,16 +16,16 @@
       Not in a valid format of (username@domainName) format
     </span>
     <br>
-    <input class="form-control-lg" type="text" name="mobile" placeholder="Enter mobile number"
+    <input class="form-control-lg" type="text" name="mobile" placeholder="Enter Your Mobile Number"
     ng-model="signUpCtrl.user.mobile" pattern="\d{10}">
     <span ng-if='regForm.mobile.$invalid && regForm.mobile.$touched'>
       Mobile Number should be consisting of 10 digits only
     </span><br>
     <input class="form-control-lg" type="file" id="img" name="img" accept="image/*" ng-model=signUpCtrl.user.photo>
     <br> 
-    <input class="form-control-lg" type="text" name="address" ng-model=signUpCtrl.user.address required placeholder="enter your Address">
+    <input class="form-control-lg" type="text" name="address" ng-model=signUpCtrl.user.address required placeholder="Enter Your Address">
     <br>
-    <input class='form-control-lg' type="password" ng-model=signUpCtrl.user.password required placeholder="enter your password">
+    <input class='form-control-lg' type="password" ng-model=signUpCtrl.user.password required placeholder="Enter Your Password">
     <br>
     <a ui-sref="signIn"><button ng-click="signUpCtrl.submit()">Sign Up</button></a>
 </form>
