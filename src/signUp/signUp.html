@@ -1,0 +1,24 @@
+<h1>Hello</h1>
+<legend>SignUp page</legend>
+<form name="regForm" novalidate>
+    <input type="text" name="firstName" placeholder="Enter Your First Name" required ng-model=signUpCtrl.user.firstName minlength="3">
+    <span ng-if='(regForm.firstName.$error.minlength || regForm.firstName.$error.required) && regForm.firstName.$touched'>
+        firstName must be at least 3 Characters long
+    </span><br>
+    <input type="text" name="lastName" placeholder="Enter Your Last Name" required ng-model=signUpCtrl.user.lastName minlength="3">
+    <span ng-if='(regForm.lastName.$error.minlength || regForm.lastName.$error.required) && regForm.lastName.$touched'>
+        lastName must be at least 3 Characters long
+    </span><br>
+    <input type="email" name="email"
+    required ng-model='signUpCtrl.user.email' placeholder="Email-id">
+    <span ng-if='regForm.email.$invalid && regForm.email.$touched'>
+      Not in a valid format of (username@domainName) format
+    </span>
+    <br>
+    <input type="text" name="mobile" placeholder="Enter mobile number"
+    ng-model="signUpCtrl.user.mobile" pattern="\d{10}">
+    <span ng-if='regForm.mobile.$invalid && regForm.mobile.$touched'>
+      Mobile Number should be consisting of 10 digits only
+    </span><br>
+    <input type="img" required >
+</form>
