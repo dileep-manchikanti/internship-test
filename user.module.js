@@ -1,6 +1,6 @@
 (function(){
     'use strict';
-    angular.module('user',['ui-router','common'])
+    angular.module('user',['ui-router'])
     .config(config);
     config.$inject = ['$urlRouterProvider'];
 function config($urlRouterProvider) {

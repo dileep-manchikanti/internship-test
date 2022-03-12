@@ -5,6 +5,6 @@
         <span ng-if="signIn.invalidEmail">Enter email address in valid email format!!</span>
         <br>
         <span>Password  </span><input type="password" ng-model="signIn.user.password" required placeholder="enter your password">
-        <button class="btn btn-default">Log IN</button>
+        <button class="btn btn-default" ng-click="signIn.logIn()">Log In</button>
     </div>
 </div>
