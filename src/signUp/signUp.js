@@ -13,6 +13,7 @@
         userService.user=user.user;
         user.submit=function(){
             console.log(user.user.photo);
+            console.log(user.user.email);
             window.alert("your Credentials are saved sucessfully");
         }
     }
