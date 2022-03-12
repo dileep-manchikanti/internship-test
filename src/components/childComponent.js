@@ -10,6 +10,11 @@
     });
 
     function childComponentController(){
-        
+        if($ctrl.name!=""){
+            $ctrl.Name="Hi "+$ctrl.name;
+        }
+        else{
+            $ctrl.Name="";
+        }
     }
 })();
