@@ -6,24 +6,24 @@
     <span ng-if='(regForm.firstName.$error.minlength || regForm.firstName.$error.required) && regForm.firstName.$touched'>
         firstName must be at least 3 Characters long
     </span><br>
-    <input type="text" name="lastName" placeholder="Enter Your Last Name" required ng-model=signUpCtrl.user.lastName minlength="3">
+    <input type="text" class="form-control-lg" name="lastName" placeholder="Enter Your Last Name" required ng-model=signUpCtrl.user.lastName minlength="3">
     <span ng-if='(regForm.lastName.$error.minlength || regForm.lastName.$error.required) && regForm.lastName.$touched'>
         lastName must be at least 3 Characters long
     </span><br>
-    <input type="email" name="email"
+    <input class="form-control-lg" type="email" name="email"
     required ng-model='signUpCtrl.user.email' placeholder="Email-id">
     <span ng-if='regForm.email.$invalid && regForm.email.$touched'>
       Not in a valid format of (username@domainName) format
     </span>
     <br>
-    <input type="text" name="mobile" placeholder="Enter mobile number"
+    <input class="form-control-lg" type="text" name="mobile" placeholder="Enter mobile number"
     ng-model="signUpCtrl.user.mobile" pattern="\d{10}">
     <span ng-if='regForm.mobile.$invalid && regForm.mobile.$touched'>
       Mobile Number should be consisting of 10 digits only
     </span><br>
-    <input type="file" id="img" name="img" accept="image/*" ng-model=signUpCtrl.user.photo>
+    <input class="form-control-lg" type="file" id="img" name="img" accept="image/*" ng-model=signUpCtrl.user.photo>
     <br> 
-    <input type="text" name="address" ng-model=signUpCtrl.user.address required placeholder="enter your Address">
+    <textarea class="form-control-lg" type="text" name="address" ng-model=signUpCtrl.user.address required placeholder="enter your Address" rows="3">
     <br>
     <input type="password" ng-model=signUpCtrl.user.password required placeholder="enter your password">
     <br>
