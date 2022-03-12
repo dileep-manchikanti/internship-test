@@ -2,6 +2,9 @@ body{
     background-color: black;
     color:aliceblue;
 }
+header{
+    background-color:#F6B319;
+}
 input{
     color:maroon;
     font-weight: bold;
