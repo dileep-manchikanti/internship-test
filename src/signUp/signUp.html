@@ -20,10 +20,12 @@
     <span ng-if='regForm.mobile.$invalid && regForm.mobile.$touched'>
       Mobile Number should be consisting of 10 digits only
     </span><br>
-    <input type="file" id="img" name="img" accept="image/*" required>
+    <input type="file" id="img" name="img" accept="image/*" required ng-model=signUpCtrl.user.photo>
     <span ng-if=""></span>
     <input type="text" name="address" ng-model=signUpCtrl.user.address required placeholder="enter your Address">
+    <br>
     <input type="password" ng-model=signUpCtrl.user.password required placeholder="enter your password">
+    <br>
     <a ui-sref="signIn"><button ng-click="signUpCtrl.submit()">Submit</button></a>
 </form>
 </fieldset>
