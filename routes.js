@@ -12,6 +12,12 @@
             templateUrl:"src/signUp/signUp.html",
             controller:'signUpController',
             controllerAs:'signUpCtrl'
-        });
+        })
+        .state('signIn',{
+            url:"/signIn",
+            templateUrl:"src/signIn/signIn.html",
+            controller:'signInController',
+            controllerAs:'signInCtrl'
+        })
     }
 })();

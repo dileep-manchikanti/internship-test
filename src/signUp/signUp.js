@@ -11,5 +11,8 @@
     function signUpController(userService){
         var user=this;
         userService.user=user.user;
+        user.submit=function(){
+            window.alert("your Credentials are saved sucessfully");
+        }
     }
 })();
