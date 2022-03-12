@@ -10,6 +10,7 @@
     });
 
     function childComponentController(){
+        var $ctrl=this;
         if($ctrl.name!=""){
             $ctrl.Name="Hi "+$ctrl.name;
         }
