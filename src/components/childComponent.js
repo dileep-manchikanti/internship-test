@@ -18,6 +18,7 @@
         // else{
         //     $ctrl.Name="";
         // }
-        $ctrl.Name="Hi"+$ctrl.name;
+        console.log($ctrl.name);
+        $ctrl.Name="Hi "+$ctrl.name;
     }
 })();
