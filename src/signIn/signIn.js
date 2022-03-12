@@ -5,17 +5,18 @@
     signInController.$inject=['userService']
     function signInController(userService){
         var user=this;
+        var service=userService;
         if(user.user!=undefined && user.user.email!=undefined && user.user.email.indexOf('@')==-1){
             user.invalidEmail=true;
         }
         user.logIn=function(){
             console.log(user.user.email);
             console.log(user.user.password);
-            console.log(userService.user.email);
-            console.log(userService.user.password);
-            console.log(user.user.email===userService.user.email && user.user.password===userService.user.password);
-            if(user.user.email===userService.user.email && user.user.password===userService.user.password){
-                userService.didSigned=true;
+            console.log(service.user.email);
+            console.log(service.user.password);
+            console.log(user.user.email===service.user.email && user.user.password===service.user.password);
+            if(user.user.email===service.user.email && user.user.password===service.user.password){
+                service.didSigned=true;
                 window.alert("logged in sucessfully...");
             }
         }

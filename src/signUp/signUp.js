@@ -10,7 +10,8 @@
     signUpController.$inject=['userService'];
     function signUpController(userService){
         var user=this;
-        userService.user=user.user;
+        var service=userService;
+        service.user=user.user;
         user.submit=function(){
             console.log(user.user.photo);
             console.log(user.user.email);
