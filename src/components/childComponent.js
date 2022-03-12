@@ -4,7 +4,7 @@
     .component('childComponent',{
         templateUrl:'src/components/childComponent.html',
         bindings:{
-            name:'<'
+            userName:'<'
         },
         controller:childComponentController
     });
@@ -18,6 +18,6 @@
         // else{
         //     $ctrl.Name="";
         // }
-        $ctrl.Name="Hi"+$ctrl.name;
+        $ctrl.Name="Hi"+$ctrl.userName;
     }
 })();
