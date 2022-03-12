@@ -25,5 +25,9 @@
             controller:'profileController',
             controllerAs:'profileCtrl'
         })
+        .state('components',{
+            url:'/components',
+            templateUrl:'src/components/componentsPage.html'
+        })
     }
 })();
