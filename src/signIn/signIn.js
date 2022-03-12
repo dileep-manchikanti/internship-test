@@ -1,8 +1,11 @@
 (function(){
     'use strict';
     angular.module('user')
-    .service('userService')
+    .service('userService',userService)
     .controller('signInController',signInController);
+    function userService(){
+        var service=this;
+    }
     signInController.$inject=['userService'];
     function signInController(userService){
         var user=this;
