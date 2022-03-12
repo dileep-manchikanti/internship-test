@@ -1,11 +1,13 @@
 (function(){
     'use strict';
     angular.module('user')
+    .service('userService')
     .controller('signInController',signInController);
     signInController.$inject=['userService'];
     function signInController(userService){
         var user=this;
         var service=userService;
+        console.log(service);
         if(user.user!=undefined && user.user.email!=undefined && user.user.email.indexOf('@')==-1){
             user.invalidEmail=true;
         }
