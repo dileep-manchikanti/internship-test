@@ -2,3 +2,7 @@ body{
     background-color: black;
     color:aliceblue;
 }
+input{
+    color:maroon;
+    font-weight: bold;
+}
