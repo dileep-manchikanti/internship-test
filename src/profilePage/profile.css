@@ -9,3 +9,11 @@ legend{
     font-size: large;
     font-weight: bold;
 }
+button.btn.btn-default{
+    background-color:green;
+    border-radius:10px;
+    transition:all 300ms ease;
+}
+button.btn.btn-default:hover{
+    transform:scale(1.1)
+}
