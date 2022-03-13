@@ -2,7 +2,7 @@ body{
     background-color: black;
     color:aliceblue;
     font-family: 'Oxygen', sans-serif;
-    background-image: url('image.jpg') no-repeat;
+    background: url('../lib/image.jpg') no-repeat;
 }
 input{
     color:maroon;
