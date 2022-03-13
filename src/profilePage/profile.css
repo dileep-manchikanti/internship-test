@@ -1,9 +1,17 @@
 legend{
-    color:aqua;
+    color:maroon;
     font-weight:bolder;
     font-size: xx-large;
 }
-
+div#noUser{
+    color:brown;
+    font-weight:bold;
+    font-size: xx-large;
+}
+h1{
+    color:maroon;
+    font-weight:bolder;
+}
 #profile{
     color:green;
     font-size: large;
