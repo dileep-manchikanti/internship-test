@@ -1,8 +1,10 @@
 body{
     background-color: black;
-    color:aliceblue;
+    color:maroon;
     font-family: 'Oxygen', sans-serif;
-    background: url('../lib/image.jpg');
+    background: url('../lib/image.jpg') ;
+  font-weight:bolder;
+  font-size:x-large;
 }
 input{
     color:maroon;
