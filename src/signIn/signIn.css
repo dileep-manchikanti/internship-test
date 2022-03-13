@@ -17,3 +17,11 @@ span{
     padding:2vw;
     transform: translate(-50%,-50%);
 }
+button.btn.btn-default{
+    background-color:green;
+    border-radius:10px;
+    transition:all 300ms ease;
+}
+button.btn.btn-default:hover{
+    transform:scale(1.1)
+}
