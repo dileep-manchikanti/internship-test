@@ -14,7 +14,7 @@ button.btn.btn-default{
     transition:all 300ms ease;
 }
 legend{
-    color:maroon;
+    color:aqua;
     font-weight: bolder;
     font-size: xx-large;
 }
